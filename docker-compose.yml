@@ -1,0 +1,13 @@
+version: "3.3"
+services:
+
+  maboss_review:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+      
+    image: maboss_review
+    container_name: maboss_review
+    ports:
+      - "8888:8888"
+   
